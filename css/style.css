@@ -72,6 +72,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   background-color: #74c04a;
+  overflow: hidden;
 }
 
 body._lock {
@@ -248,7 +249,7 @@ body._lock {
 }
 
 .weather__block {
-  margin: 100px 15px 0 15px;
+  margin: 100px 15px 40px 15px;
   padding: 15px 15px 35px 15px;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.849);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.849);
@@ -375,7 +376,7 @@ body._lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 80px;
+  height: 60px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
