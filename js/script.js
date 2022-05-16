@@ -18,7 +18,6 @@ function searchCity(){
     cityName = document.querySelector('.search__input').value;
     console.log(cityName);
     loadweather();
-    loadweather();
 }  
 
 
@@ -39,12 +38,15 @@ async function loadweather(e) {
     let responseResult = await response.json();
     console.log(responseResult);
 
-
+    
     if (response.ok) {
         getWeather(responseResult);
         console.log(getWeather(responseResult));
     } else {
-        weatherBlock.innerHTML = responseResult.message +'. '+'Введіть повторно ваш запит';
+        weatherBlock.innerHTML =`
+        <p class = "weather__message-text">
+            Введіть повторно ваш запит
+        </p>`+ responseResult.message +'. ';
     }
 
     
